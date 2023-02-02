@@ -1,0 +1,149 @@
+/* --- GENERAL --- */
+
+main{height: 100vh;}
+
+/*Menu*/
+nav.navbar.navbar-expand-lg.navbar-light{
+	background-color: #0074a6ba;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255 255 255 / 100%);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 90%);
+}
+
+
+/*Contenedor*/
+
+.container, .container-lg, .container-md, .container-sm {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/*Localizador de página*/
+
+.breadcrumb-item.active {
+    font-size: 22PX;
+    font-weight: 700;
+}
+
+/* --- HOME --- */
+
+.flexCentrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.title {
+    font-size: 66px;
+}
+
+/* --- EXPERIENCIA --- */
+
+.accordion-button:not(.collapsed) {
+    color: #0074a6ba;
+    background-color: #ffd3d33b;
+}
+
+
+/* --- CONTACTO --- */
+
+form.row.g-3{margin-top: 20px;}
+
+.btn-success {
+    color: #fff;
+    background-color: #a9e29d;
+    border-color: #a9e29d;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #83bbd3;
+    border-color: #83bbd3;
+}
+
+
+@media only screen and ( max-width:991px) {
+
+    /* --- General --- */
+
+    body {
+        font-size:1.75rem;
+    }
+
+    .h5, h5 {font-size: 3rem;}
+    .h6, h6 {font-size: 1.5rem;}
+
+    .navbar-brand {
+        margin-left: 2rem;
+        font-size: 4rem;
+    }
+
+    /* --- Home --- */ 
+
+    span.title {
+        font-size: 120px;
+    }
+
+    /* --- Educacion --- */
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 80vw!important;
+        word-wrap: break-word;
+        background-color: #eaeaea;
+        background-clip: border-box;
+        border: 1px solid rgb(0 0 0 / 77%);
+        margin: 0px;
+    }
+
+    .card-body { padding: 2rem 2rem;}
+
+    .card-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .mb-2 {
+        margin-bottom: .75rem!important;
+    }
+
+    .card-subtitle {
+        margin-top: 0rem;
+    }
+
+    /* --- Experiencia --- */
+    
+    .container, .container-md, .container-sm {
+        max-width: 90vw;
+        margin: 20px 50px;
+    }
+    .breadcrumb-item.active {
+        font-size: 3.5rem;
+    }
+
+    .accordion-button {
+        font-size:2rem;
+    }
+
+    /* --- Contacto --- */
+    .btn{font-size: 2rem;}
+}
+@media only screen and ( min-width:992px) {
+
+    /* --- Home --- */
+
+    /*Menu*/
+    .navBottom{
+        width: 100vw;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+}
