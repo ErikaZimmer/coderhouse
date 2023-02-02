@@ -1,0 +1,154 @@
+/* --- TIPOGRAFIAS --- */
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Homemade+Apple&display=swap');
+
+
+/* --- GENERAL --- */
+body{ width: 100%; margin: 0px;}
+
+main{
+	border-bottom: 2px solid #000;
+	min-height: 80vh;
+}
+
+p{margin: 0px;}
+
+.centrado{text-align: center;}
+
+/*TITULO*/
+#tituloWeb{
+	font-family: 'Calibri', cursive;
+	font-size: 64px;
+}
+
+/*MENU*/
+nav{
+	display: inline;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Calibri', cursive;
+}
+ul{
+	list-style-type: none;
+	position: sticky;
+    top: 0px;
+    background-color: #ffffff8c;
+    padding: 15px 0px;
+    margin: 0px;
+}
+li{
+	padding: 0px 10px;
+	text-decoration: none;
+	display: inline;
+}
+
+/*SUBMENU PORTFOLIO*/
+
+ul ul{
+	position: absolute;
+	display: none;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+}
+
+ul ul li{
+	text-align: center;
+	display: inline;
+}
+
+ul ul li a{color: white;}
+
+ul li:hover ul{ display: block; }
+
+/*PIE DE PAGINA*/
+
+footer{
+	color: white;
+	background-color: #000;
+	margin: 0px;
+	padding: 25px;
+}
+
+
+/* --- HOME --- */
+
+#imgHome{width: 90vw;}
+#presentaHome{
+	background-color: #31757bb8; 
+	margin: -100px 20vh 10vh 20vh; 
+	position: relative;
+}
+#fraseHome{
+	font-family: 'Gochi Hand', cursive;
+	font-size: 22px;
+	color: white;
+	z-index: 1;
+	padding: 20px 5px 10px 5px;
+}
+#autorHome{
+	font-family: 'Homemade Apple', cursive;
+	font-size: 22px;
+	z-index: 2;
+	padding: 15px 0px 10px 0px;
+}
+
+
+/* --- ABOUT --- */ 
+
+#sectionAbout{display: flex;}
+#presentaAbout{margin: 0px 20px;}
+#myImgAbout{max-width: 25vw;}
+.preguntaRandom{
+	color: #170055; 
+	font-weight: 700;
+}
+
+
+/* --- PORTFOLIO ---- */
+
+#contentPortfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px 20vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-basis:100%;
+    flex-grow:1;
+    flex-shrink:1;
+
+}
+
+.imgPortfolio{
+	margin: 15px 0px;
+	width: 100%;
+}
+
+
+
+
+/* --- CONTACTO --- */
+
+form{
+	display: grid;
+	margin: 5vh 25vh;
+}
+label{
+	color: #170055; 
+	font-weight: 700;
+	padding: 20px 0px;
+}
+textarea{resize:none;}
+.seleccionarOpcion{display: block;}
+.button{
+	color: #f7dce9;
+	background-color: #170055;
+	border: 2px solid #170055;
+	width: 200PX;
+	margin: 15px 10px;
+	padding: 5px;
+}
