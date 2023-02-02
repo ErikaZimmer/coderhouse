@@ -1,0 +1,27 @@
+a{text-decoration: none;}
+ul{list-style-type: none;}
+li{
+	text-decoration: none;
+	color: white;
+	background-color: #fccccc;
+}
+span, p, label, table{
+	font-family: arial;
+	letter-spacing: 0.5px;
+}
+p{
+
+}
+
+#nombreCV{
+	font-family: 'Kristi', cursive;
+	font-size: 80px;
+	text-align: center;
+	margin: 10px 0px 10px 0px;
+}
+.categoria, .cabecera{
+	font-weight: 800;
+}
+.dato{
+
+}
