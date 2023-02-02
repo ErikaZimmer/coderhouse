@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 2</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<p id="nombreCV">Fa Mulan</p>
+	</header>
+	<nav>
+		<ul class="menuSuperior">
+			<a href="home.html"><li class="itemMenu">Home</li></a>
+			<a href="educacion.html"><li class="itemMenu">Educacion</li></a>
+			<a href="experiencia.html"><li class="itemMenu">Experiencia</li></a>
+			<a href="contacto.html"><li class="itemMenu">Contacto</li></a>
+		</ul>
+	</nav>
+	<main id="contenidoContacto">
+		<form action="/xxx.php" method="post" enctype="" target="_blank">
+			<label>Nombre:</label><input type="text" name="nombreContacto">
+			<label>Empresa:</label><input type="text" name="empresaContacto">
+			<label>Email:</label><input type="email" name="emailContacto">
+			<label>Motivo del contacto:</label>
+			<input type="radio" name="mot_contacto" value="propEducativa"><label>Propuesta Educativa</label>
+			<input type="radio" name="mot_contacto" value="propLaboral"><label>Propuesta Laboral</label>
+			<input type="radio" name="mot_contacto" value="otro"><label>Otro</label>
+			<label>Mensaje:</label><textarea></textarea>
+			<input type="checkbox" name="consentimiento"><label>Estoy de acuerdo con enviar este mensaje.</label>
+			<input class="boton" type="submit" name="enviarContacto" value="Enviar mensaje"> 
+			<input class="boton" type="reset" name="borrarContacto" value="Borrar mensaje" onclick="alert('Ya podes escribir un nuevo mensaje!')" >
+		</form>
+	</main> 
+	<footer>
+		<p>Sitio desarrollado por La abejita Feliz</p>
+	</footer>
+</body>
+</html>

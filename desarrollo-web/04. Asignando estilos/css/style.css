@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{margin: 0px;}
+#nombreCV{
+	color: white;
+	font-family:'Raleway', sans-serif;
+	font-size: 50px;
+	background-color: #222f56;
+	width: 70vw;
+	margin: 10px 0px;
+	padding: 20px 50px;
+	position: absolute;
+	top: 22px;
+	right: 0px;
+}
+
+a{text-decoration: none;}
+ul{
+	list-style-type: none;
+	padding: 0px;
+	margin-right: 25px;
+}
+
+li{
+	text-decoration: none;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	background-color: #fccccc;
+	margin: 5px 0px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}
+
+main{min-height: 60vh;}
+
+.categoria, label{color: #222f56; font-weight: 700;}
+
+.seccionTitle{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 2px dashed #fccccc;
+}
+
+#datosPrincipales{border-bottom: 2px solid #222f56;}
+
+#presentacionHome{border-bottom: 4px double #222f56;}
+
+footer{	
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+	text-align: center;
+	background-image: url("https://i.pinimg.com/originals/a9/8d/36/a98d36531cfcdabba51a8458ece82d5f.jpg");
+	background-position: left; 
+	background-repeat: repeat; 
+	background-size: auto;
+	height: 100px;
+}
+
+.boton{
+	color: #fccccc;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	background-color: #222f56;
+	border: 1px solid #fccccc!important;}
+
+.tituloTabla{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #222f56;
+}
