@@ -1,0 +1,270 @@
+/* --- TIPOGRAFIAS --- */
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Homemade+Apple&display=swap');
+
+
+/* --- GENERAL --- */
+body{ width: 100%; margin: 0px;}
+
+main{border-bottom: 2px solid #000;}
+
+p{margin: 0px;}
+
+.centrado{text-align: center;}
+
+/*TITULO*/
+#tituloWeb{
+	font-family: 'Calibri', cursive;
+	font-size: 64px;
+}
+
+/*MENU*/
+nav{
+	display: inline;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Calibri', cursive;
+}
+ul{
+	list-style-type: none;
+	position: sticky;
+    top: 0px;
+    background-color: #ffffff8c;
+    padding: 15px 0px;
+    margin: 0px;
+    z-index: 999;
+}
+li{
+	padding: 0px 10px;
+	text-decoration: none;
+	display: inline;
+}
+a:active {color: #31757b;} 
+
+/*SUBMENU PORTFOLIO*/
+
+ul ul{
+	position: absolute;
+	display: none;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+}
+
+ul ul li{
+	text-align: center;
+	display: inline;
+}
+
+ul ul li a{color: white;}
+
+ul li:hover ul{ display: block; }
+
+/*PIE DE PAGINA*/
+
+footer{
+	color: white;
+	background-color: #000;
+	margin: 0px;
+	padding: 25px;
+}
+
+
+/* --- HOME --- */
+#presentaHome{
+	background: linear-gradient(#cececeb5, #00000094);
+	position: relative;
+}
+
+#seccionImg:hover ~ #presentaHome{
+	animation: comeBackColor;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes comeBackColor{
+	0% {background: linear-gradient(#cececeb5, #00000094);}
+	50% {background: linear-gradient(#31757b73, #31757beb);}
+	100% {background: linear-gradient(#cececeb5, #00000094);}
+}
+
+#seccionImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    margin: 0px 6vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-basis:100%;
+    flex-grow:1;
+    flex-shrink:1;
+    filter: grayscale(1);
+    transition: filter 2s;
+}
+
+#seccionImg:hover{filter: grayscale(0);}
+
+#fraseHome{
+	font-family: 'Gochi Hand', cursive;
+	font-size: 22px;
+	color: white;
+	z-index: 1;
+	padding: 20px 5px 10px 5px;
+}
+#autorHome{
+	font-family: 'Homemade Apple', cursive;
+	font-size: 22px;
+	z-index: 2;
+	padding: 15px 0px 10px 0px;
+}
+
+
+/* --- ABOUT --- */ 
+
+#sectionAbout{display: flex;}
+#presentaAbout{margin: 0px 20px;}
+/*#myImgAbout{max-width: 25vw;}*/
+.preguntaRandom{
+	color: #170055; 
+	font-weight: 700;
+}
+
+
+/* --- PORTFOLIO ---- */
+
+#contentPortfolio{
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw;
+	grid-template-rows: auto;
+	column-gap: 10px;
+	row-gap: 5px;
+	align-content: stretch;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-auto-flow: column;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 3 / 2 / 3; }
+.div3 { grid-area: 2 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 2 / 2 / 2; }
+.div5 { grid-area: 2 / 1 / 2 / 2; }
+.div6 { grid-area: 2 / 2 /3 / 3;  }
+.div7 { grid-area: 3 / 2 /4 / 3;  }
+
+.imgPortfolio{
+	width: 100%;
+	margin: 2px;
+}
+
+
+/* --- CONTACTO --- */
+
+form{
+	display: grid;
+	margin: 5vh 25vh;
+}
+label{
+	color: #170055; 
+	font-weight: 700;
+	padding: 20px 0px;
+}
+textarea{resize:none;}
+.seleccionarOpcion{display: block;}
+.button{
+	color: #f7dce9;
+	background-color: #170055;
+	border: 2px solid #170055;
+	border-radius: 5px;
+	width: 200PX;
+	margin: 15px 10px;
+	padding: 5px;
+}
+
+
+@media only screen and (max-width: 425px) {
+
+	/* --- GENERAL --- */
+	header{margin-top: 3vh;}
+	main{max-height: auto;}
+
+	/* --- HOME --- */
+	#presentaHome {
+	    background-color: #31757bb8;
+	    margin: -100px 25px 10px 25px;
+	    position: relative;
+	}
+	#seccionImg{margin: 0px 0px;}
+	div#seccionImg > img{
+	    width: 200vw;
+	    position: relative;
+	    left: -50vw;
+	}
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1023px){
+
+	/* --- GENERAL --- */
+
+	header{margin-top: 5vh;}
+
+	main{
+		min-height: 70vh;
+		margin-top: 5vh;
+	}
+
+	/* --- HOME --- */
+
+	#presentaHome {
+    	margin: -50px 10vh 10vh 10vh;
+	}
+	
+	#seccionImg {margin: 0px 0px;}
+
+	div#seccionImg > img{width: 100vw;}
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+	/* --- GENERAL --- */
+
+	header{margin-top: 5vh;}
+
+	main{
+		min-height: 75vh;
+		margin-top: 2vh;
+	}
+
+	/* --- HOME --- */
+
+	div#seccionImg > img{
+		width: 95vw;    
+	}
+
+	#seccionImg{
+		animation: imageMovimiento;
+    	animation-duration: 5s;
+    	animation-iteration-count: 2;
+    }
+
+	@keyframes imageMovimiento{
+		from {display: none;}
+		to {display: block;}
+	}
+	
+
+	#imgHome2{display: none;}
+
+	#presentaHome {margin: -80px 30vh 10vh 30vh;}
+}
+
+/* --- ANIMACIONES --- */ 
+
+	
