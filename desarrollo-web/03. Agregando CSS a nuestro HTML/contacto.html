@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="menuSuperior">
+		<img src="" id="logoPrincipal">
+		<ul>
+			<a href="home.html"><li>Sobre mi</li></a>
+			<a href="educacion.html"><li>Educacion</li></a>
+			<a href="experiencia.html"><li>Experiencia</li></a>
+			<a href="contacto.html"><li>Contacto</li></a>
+		</ul>
+	</div>
+	<div id="contenidoContacto">
+		<form action="/xxx.php" method="post" enctype="" target="_blank">
+			<label>Nombre:</label><input type="text" name="nombreContacto">
+			<label>Empresa:</label><input type="text" name="empresaContacto">
+			<label>Email:</label><input type="email" name="emailContacto">
+			<label>Motivo del contacto:</label>
+			<input type="radio" name="mot_contacto" value="propEducativa"><label>Propuesta Educativa</label>
+			<input type="radio" name="mot_contacto" value="propLaboral"><label>Propuesta Laboral</label>
+			<input type="radio" name="mot_contacto" value="otro"><label>Otro</label>
+			<label>Mensaje:</label><textarea></textarea>
+			<input type="checkbox" name="consentimiento"><label>Estoy de acuerdo con enviar este mensaje.</label>
+			<input type="submit" name="enviarContacto" value="Enviar mensaje"> 
+			<input type="reset" name="borrarContacto" value="Borrar mensaje" onclick="alert('Ya podes escribir un nuevo mensaje!')" >
+		</form>
+	</div>
+	<div id="piePagina"></div>
+</body>
+</html>
