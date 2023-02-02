@@ -1,0 +1,97 @@
+/* --- FUENTES --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* --- CONF GENERALES --- */ 
+
+body{margin: 0px;}
+
+main{
+	min-height: 50vh;
+	margin: 50px 40px;
+}
+
+#nombreCV{
+	color: white;
+	font-family:'Raleway', sans-serif;
+	font-size: 50px;
+	background-color: #222f56;
+	width: 70vw;
+	margin: 10px 0px;
+	padding: 20px 50px;
+	position: absolute;
+	top: 22px;
+	right: 0px;
+}
+
+.justifyText{text-align: justify;}
+
+/*Menu*/
+a{text-decoration: none;}
+ul{
+	list-style-type: none;
+	padding: 0px;
+	margin-right: 25px;
+}
+
+li{
+	text-decoration: none;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	background-color: #fccccc;
+	margin: 5px 0px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}
+
+/*Footer*/
+
+footer{	
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+	text-align: center;
+	background-color: #222f56;
+	margin: 10px 0px 0px 0px;
+	padding: 50px 0px;
+}
+
+/* --- SOBRE MI --- */
+.categoria {color: #222f56; font-weight: 700;}
+
+#datosPrincipales{
+	display: table-caption;
+	margin: 10px 0px;
+}
+
+#datosPrincipales>span{margin: 10px 0px;}
+
+
+#aboutDescription{
+	border-top: 3px solid #fccccc;
+	border-bottom: 3px solid #fccccc;
+}
+
+/* --- EXPERIENCIA & EDUCACION --- */
+
+.tituloTabla{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #222f56;
+}
+
+/* --- CONTACTO --- */
+
+.boton{
+	color: #fccccc;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	background-color: #222f56;
+	border: 1px solid #fccccc!important;
+	width: 150px;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
