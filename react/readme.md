@@ -10,6 +10,10 @@ Al finalizar, podrás crear tus propias aplicaciones SPA, y estarás en condicio
 
 ## Mi cursada
 
+**Profesor**: Guillermo Jorge Fergnani
+
+**Tutor**: Nicolás Díaz
+
 ![image](https://user-images.githubusercontent.com/55201104/216480365-948fd8c1-cb47-450e-828f-d012c60d247a.png)
 
 ## Mi trabajo final
