@@ -6,7 +6,7 @@ En este curso aprenderás los fundamentos del lenguaje de programación más usa
 
 👉 Web: https://www.coderhouse.com/online/javascript
 
-# Mi cursada
+## Mi cursada
 
 ![image](https://user-images.githubusercontent.com/55201104/216479693-008a295d-b079-45df-84f0-b5543cd8fd75.png)
 
