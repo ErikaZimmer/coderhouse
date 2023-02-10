@@ -1,0 +1,120 @@
+/* --- TIPOGRAFIAS --- */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+/* --- GENERAL --- */
+
+body{width:100vw;}
+section{min-height: 90vh;}
+
+.ocultar{display: none;}
+.mostrar{display: block;}
+
+.principalTitle{
+	font-family: Satisfy;
+	font-size: 52px;
+	color: white;
+	background-color: #608679;
+	margin-left: 50px;
+	padding: 100px 20px 100px 30px;
+}
+
+.home-img{
+	width: 100%;
+	filter: opacity(0.75);
+}
+
+.container, .row {width:100%;margin: 0px;padding: 0px;}
+
+.row{    
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1400px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	    max-width: 100vw!important;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+	    max-width: 100vw;
+	}
+}
+
+/* --- MENU --- */
+
+nav{z-index: 99;}
+
+.nav-link {color: #608679;}
+
+.nav-link:hover; {color: black;}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #608679;
+}
+
+@media screen and (min-width: 992px){
+	.navbar-expand-lg .navbar-collapse {
+	    display: flex!important;
+	    flex-basis: auto;
+	    flex-direction: row;
+	    justify-content: flex-end;
+	    align-items: center;
+	    align-content: center;
+	    flex-wrap: nowrap;
+	}
+}
+
+/* --- FOOTER --- */
+
+footer{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	width: 100vw;
+	height: 60px;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	background-color: gray;
+}
+
+
+/* --- SERVICIOS --- */
+
+.list-group {
+	display: flex;
+    flex-direction: row;
+}
+
+.list-group-space{
+    border-radius: 0.25rem;
+    justify-content: space-between;
+}
+
+.list-group-center{
+	flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-primary,.btn-primary:active {
+    color: #fff;
+    background-color: #608679;
+    border-color: #608679;
+}
+.btn,.btn:hover, .btn:active, .btn-primary:active{transition: NONE}
+.btn:hover, .btn:active{
+    color: black;
+    background-color: #c1d2cf;
+    border-color: #c1d2cf;
+}
